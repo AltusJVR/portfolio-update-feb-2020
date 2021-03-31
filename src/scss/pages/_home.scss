@@ -1,0 +1,56 @@
+@use '../components/buttons';
+@use '../components/navbar';
+@use '../components/footer';
+@use '../components/section';
+@use '../base/typo';
+
+%pos {
+  position: relative;
+  // z-index: 1;
+}
+
+%pseudo {
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+%bgprops {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.section__1 {
+@extend%pos;
+@extend%bgprops;
+background-image: url(/src/img/wave3.svg);
+background-color: typo.$o-black;
+background-blend-mode: overlay;
+z-index: 10;
+}
+
+.section__1::after {
+  @extend%pseudo;
+  @extend%bgprops;
+  background-image: url(/src/img/wave1.svg);
+  z-index: -50;
+}
+.section__1::before {
+  @extend%pseudo;
+  @extend%bgprops;
+  background-image: url(/src/img/wave2.svg);
+  z-index: -1;
+}
+
+
+/* .section__1::after{
+  @extend%pseudo;
+  @extend%bgprops;
+  background-color: typo.$o-black;
+  z-index: -1;
+} */

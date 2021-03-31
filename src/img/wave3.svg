@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 264.58257 18.756579"
+   height="70.891006"
+   width="999.99713"
+   sodipodi:docname="wave3.svg">
+  <defs
+     id="defs2">
+    <linearGradient
+       id="sw-gradient-0"
+       x1="0"
+       x2="0"
+       y1="1"
+       y2="0">
+      <stop
+         stop-color="rgba(0, 203, 255, 1)"
+         offset="0%"
+         id="stop830" />
+      <stop
+         stop-color="rgba(0, 0, 0, 1)"
+         offset="100%"
+         id="stop832" />
+    </linearGradient>
+  </defs>
+  <sodipodi:namedview
+     units="px"
+     showborder="false"
+     inkscape:guide-bbox="true"
+     showguides="true"
+     showgrid="false"
+     inkscape:document-rotation="0"
+     inkscape:current-layer="layer1"
+     inkscape:document-units="px"
+     inkscape:cy="204.01693"
+     inkscape:cx="211.42715"
+     inkscape:zoom="0.35"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base"
+     inkscape:window-width="1536"
+     inkscape:window-height="817"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Albertus Janse Van Rensburg</dc:title>
+          </cc:Agent>
+        </dc:creator>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Layer 1"
+     transform="translate(-49.893234,-63.949092)">
+    <path
+       id="path837"
+       d="m 49.893234,67.700408 11.02427,5.626973 11.02428,5.626973 11.024269,-3.751315 11.02428,-5.626974 11.024267,5.626974 11.02428,5.626973 11.02427,-3.751316 11.02427,-7.502631 11.02428,3.751316 11.02427,-9.378289 11.02428,3.751316 11.02427,-1.875658 11.02428,5.626973 11.02427,7.502631 11.02427,-11.253946 11.02428,5.626973 11.02427,-5.626973 h 11.02428 l 11.02427,-3.751316 11.02427,3.751316 h 11.02428 l 11.02427,11.253946 11.02428,-3.751315 11.02427,-9.378289 V 82.70567 H 303.45154 292.42726 281.40299 270.37871 259.35444 248.33017 237.30589 226.28162 215.25734 204.23307 193.2088 182.18452 171.16025 160.13597 149.1117 138.08742 127.06315 116.03888 105.0146 93.990333 82.966053 71.941784 60.917504 49.893234 Z"
+       fill="url(#sw-gradient-0)"
+       style="fill:#041f2d;fill-opacity:1;stroke-width:0.0382786" />
+  </g>
+</svg>
