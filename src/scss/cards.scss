@@ -1,0 +1,144 @@
+@import 'variables';
+
+#projects {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 18rem;
+  background-color: white;
+  border: none;
+  opacity: .7;
+  height: 20rem;  
+  max-height: 33rem; 
+  border-radius: 10px;
+  margin: 1rem 1rem;
+  border: 1px solid rgba(0, 0, 0, .7);
+  &-links {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: .5rem;
+  }
+  .card-body{
+    text-align: center;
+    
+  }
+  &-1:hover{
+    background-image: url(../img/movie-api.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+    cursor: pointer;  
+    transition: opacity ease-in 200ms;  
+    }
+    &-2:hover{
+
+      background-image: url(../img/guest@home4u.jpg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      z-index: 1;
+      cursor: pointer;
+      }
+    &-3:hover{
+
+      background-image: url(../img/React-Todo-List.jpeg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      z-index: 1;
+      cursor: pointer;
+      }
+    &-4:hover{
+      background-image: url(../img/Yelp_camp.jpg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      z-index: 1;
+      cursor: pointer;
+      }
+    &-5:hover{
+      background-image: url(../img/coding-challenge.jpg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      z-index: 1;
+      cursor: pointer;
+      }
+  }
+  
+
+
+  @keyframes hide-text{
+    0%{opacity: 1;}
+    25%{opacity: .75;}
+    50%{opacity: .5;}
+    75%{opacity: .25;}
+    100%{opacity: 0;}
+  }
+
+.card:hover .card-body{
+  animation: hide-text;
+  // animation-delay: 20ms;
+  animation-duration: 150ms;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+.github-link, .live-link {
+  opacity: 1;
+  background-color:$light-color;
+  color:  $dark-color;
+  border: 1px solid $dark-color;
+  outline: none;
+  padding: .5rem;
+  border-radius: 5px;
+  padding: .5rem;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.github-link:hover, .github-link:focus, .live-link:hover, .live-link:focus{
+  opacity: .8;
+  outline: none;
+}
+
+
+
+@media(max-width:780px){
+  #projects {
+    flex-direction: column;
+  }
+}
+
+.build {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  padding: .5rem .5rem;
+  .paragraph {
+    line-height: 1.4;
+  }
+}

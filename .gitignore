@@ -2,4 +2,7 @@
 package.json
 *.txt
 *.db
-*.scss
+node_modules/
+.parcel-cache
+tmp/
+dist/

@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Source+Code+Pro:wght@400;500;600;700;900&display=swap');
+
+
+a {
+  text-decoration: none;
+  color: $dark-color;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  font-family: 'Source Code Pro', monospace;
+}
+
+.heading {
+  font-family: 'Source Code Pro', monospace;
+  line-height: 1.6;
+  margin: 1rem auto;
+  color: $dark-color;
+}
+
+.dark-highlight {
+  color: $highlight-color-dark;
+}
+  
+.paragraph {
+    font-family: 'Noto Sans JP', sans-serif;
+    line-height: 1.6;
+}
+
+.active {
+  border-bottom: -2px solid $bright-color;
+}
+
+
+  .btn {
+    // border: 1px solid #111;
+    padding: 1rem 2rem;
+    display: inline-flex;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &-dark {
+      background: $dark-color;
+      color: $light-color;
+    }
+    &-light {
+      background: $light-color;
+      color:$dark-color;
+    }
+  }
+
+  .btn {
+    &-round{
+      color: #111;
+      background: #fff;
+      font-size: 1rem;
+      border-radius: 50%;
+    }
+  }
