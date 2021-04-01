@@ -82,7 +82,7 @@ $nav-height: 10vh;
     background-color:fade-out(typo.$nav-overlay-clr, .2);
     transform-origin: left;
     transition: transform 350ms ease-in;
-    z-index: 20;
+    z-index: 50;
     a {
       opacity: 0;
       color: white;
