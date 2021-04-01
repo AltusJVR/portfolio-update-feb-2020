@@ -1,0 +1,20 @@
+{
+  "name": "portfolio-update",
+  "version": "2.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "rm -rf tmp && parcel serve './src/index.html' --no-cache --dist-dir tmp -p 8080",
+    "deploy": "parcel build 'src/index.html' --no-cache --dist-dir dist --no-content-hash",
+    "dev": "rm -rf dist && parcel build 'src/index.html' --dist-dir dist --no-content-hash --public-url ./",
+    "port": "ngrok http 8080"
+  },
+  "author": "Altus Janse Van Rensburg <albertusbjvr@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "parcel": "^2.0.0-nightly.627"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.0.0-nightly.629"
+  }
+}
