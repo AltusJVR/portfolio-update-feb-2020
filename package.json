@@ -12,7 +12,7 @@
   "author": "Altus Janse Van Rensburg <albertusbjvr@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "parcel": "^2.0.0-nightly.627"
+    "parcel": "^2.0.0-nightly.629"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.0.0-nightly.629"
