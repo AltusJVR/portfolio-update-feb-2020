@@ -50,7 +50,10 @@ z-index: 10;
 }
 
 .section__2 {
+  @extend%bgprops;
+  background-image: url(/src/img/wave2.svg), url(/src/img/wave1.svg), url(/src/img/wave2.svg), url(/src/img/wave2.svg);
   padding: 1em 0;
+  background-blend-mode: darken;
 }
 
 
