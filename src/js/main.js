@@ -28,11 +28,12 @@ const toggle = () => {
 toggle();
 
 
-const sectionOneImg = document.querySelector('.section__1');
+const sectionImg = document.querySelector('.section');
 
 const parralax = () => {
+  console.log(window.scrollY)
   window.addEventListener('scroll', () => {
-    sectionOneImg.style.backgroundPositionY = `${window.scrollY / 10}px`;
+    sectionImg.style.backgroundPositionY = `${window.scrollY * 0.05}px`;
   })
 }
 
