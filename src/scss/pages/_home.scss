@@ -32,7 +32,7 @@
 background-image: url(/src/img/wave3.svg);
 background-color: typo.$o-black;
 background-blend-mode: overlay;
-z-index: 10;
+z-index: 1;
 }
 
 .section__1::after {
@@ -50,7 +50,10 @@ z-index: 10;
 }
 
 .section__2 {
+  @extend%bgprops;
+  background-image: url(/src/img/wave2.svg), url(/src/img/wave1.svg), url(/src/img/wave2.svg), url(/src/img/wave2.svg);
   padding: 1em 0;
+  background-blend-mode: darken;
 }
 
 
@@ -75,5 +78,35 @@ z-index: 10;
 .card__3 {
   .card__body{
     align-items: flex-start;
+  }
+}
+
+@media screen and (max-width:1200px){
+  .card__1, 
+  .card__2, 
+  .card__3 {
+    width: 30%;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width:678px) {
+  .card__container {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  .card__1, 
+  .card__2, 
+  .card__3 {
+    width: 40%;
+    align-items: center;
+  }
+  .card__project__1,
+  .card__project__2,
+  .card__project__3,
+  .card__project__4 {
+    width: 80%;
   }
 }
