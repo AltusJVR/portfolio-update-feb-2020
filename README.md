@@ -1,13 +1,13 @@
  [![Netlify Status](https://api.netlify.com/api/v1/badges/4dfedd28-4879-42f2-893a-ea351ecb2a11/deploy-status)](https://app.netlify.com/sites/altus-portfolio/deploys)
  
- [1. How to use:](#1-how-to-use)
- [2. Important SCSS](#2-important-scss)
-       [2.1. Colors](#21-colors)
-         [2.1.1 _colors.scss](#211-_colorsscss)
-       [2.2  Fonts](#22--fonts)
-         [2.2.1 _fonts.scss](#221-_fontsscss)
-       [2.3 Typography](#23-typography)
-         [2.3.1 _typo.scss](#231-_typoscss)
+ - [1. How to use:](#1-how-to-use)
+ - [2. Important SCSS](#2-important-scss)
+       - [2.1. Colors](#21-colors)
+         - [2.1.1 _colors.scss](#211-_colorsscss)
+       - [2.2  Fonts](#22--fonts)
+         - [2.2.1 _fonts.scss](#221-_fontsscss)
+       - [2.3 Typography](#23-typography)
+         - [2.3.1 _typo.scss](#231-_typoscss)
 
 
 # 1. How to use:
