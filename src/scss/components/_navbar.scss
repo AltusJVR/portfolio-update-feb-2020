@@ -1,0 +1,179 @@
+@use '../base/typo';
+$nav-height: 10vh;
+
+.navbar { 
+  padding: 0 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 10vh;
+  width: 100%;
+  border-bottom: 1px solid typo.$h-clr;
+  position: relative;
+  left: 0;
+  z-index: 3;
+  background-color: typo.$bg-clr;
+  transition: 
+  background-color 200ms ease-in,
+  border 200ms ease-in, 
+  color 200ms ease-in;
+  
+}
+
+.navbar__logo {
+  margin-right: auto;
+  z-index: 20;
+  color: typo.$h-clr;
+  font-size: 2em;
+}
+
+.navbar__links {
+  width: 65%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.navbar__links a {
+  font-size: 1.5em;
+  font-family: typo.$big-font;
+  text-transform: uppercase;
+  margin-top: 0.5em;
+  // padding: 0.2em 0;
+  border-top: 2px solid transparent;
+  transition: 
+  transform 200ms ease-in,
+  border-top 200ms ease-in;
+  transform-origin: center;
+  color: typo.$font-clr;
+
+  &:hover, &:focus, &:focus-visible {
+    outline: none;
+    transform: scale(1.2);
+    transform-origin: center;
+    border-top: 2px solid typo.$h-clr;
+  }
+}
+
+
+
+@media(max-width:678px){
+
+  %linkshover {
+    background-color: typo.$h-clr;
+  }
+
+  .navbar {
+    border: none;
+  }
+
+  .navbar__links{
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    height: 100vh;
+    top: 10vh;
+    left: 0;
+    transform: scaleX(0);
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color:fade-out(typo.$nav-overlay-clr, .2);
+    transform-origin: left;
+    transition: transform 350ms ease-in;
+    z-index: 20;
+    a {
+      opacity: 0;
+      color: white;
+      width: 100%;
+      text-align: center;
+      transition: 
+      background-color 150ms ease-in;
+        &:hover, &:focus, &:focus-visible {
+          @extend%linkshover;
+          border-top: 2px solid transparent;
+        }
+    }
+  }
+
+  .burger {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .line {
+    height: 3px;
+    width: 30px;
+    background-color: typo.$h-clr;
+    border-radius: 10px;
+    position: relative;
+    transition: 
+    transform 300ms ease-in,
+    background-color 300ms ease-in 100ms;
+    &::before, &::after{
+      content: '';
+      border-radius: 10px;
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: typo.$h-clr;
+      transition: 
+      transform 200ms ease-in;
+    }
+    &::after {
+      top: 10px;
+    }
+
+    &::before{
+      top: -10px;
+    }
+
+  }
+
+.toggle .line {
+  background-color: transparent;
+  transition: 
+  transform 300ms ease-in,
+  background-color 200ms ease-in;
+
+  &::before, &::after{
+    top: 0;
+    background-color: typo.$h-clr;
+    opacity: 1;
+  }
+
+  &::before{
+    transform: rotate(135deg);
+  }
+
+  &::after{
+    transform: rotate(-135deg);
+  }
+}
+
+  .nav-active {
+  transform: scaleX(1);
+  transform-origin: right;
+  }
+
+  @keyframes navLinkFade{
+    from{
+      opacity:0;
+      transform: translateX(100%);
+    }
+    to{
+      opacity:1;
+      transform:translateX(0);
+      }
+    }
+}
+/* End of media query */

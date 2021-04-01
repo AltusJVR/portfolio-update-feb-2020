@@ -1,0 +1,39 @@
+@use '../base/typo';
+
+
+%hover {
+  outline: none;
+  transform: scale(1.1);
+}
+
+.btn {
+  font-family: typo.$big-font;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: .5em 1.5em;
+  background-color: typo.$bg-clr;
+  border: 1px solid typo.$h-clr;
+  border-radius: 20px;
+  transition: transform 200ms ease-in;
+  cursor: pointer;
+  &:hover, &:focus-visible, &:focus {
+    @extend %hover;
+  }
+}
+
+.btn__primary {
+  margin-top: 1em;
+  font-size: 1em;
+  border-radius: 80px;
+  background-color: transparent;
+  color: typo.$bg-clr;
+  transition: 
+  transform 200ms ease-in,
+  background-color 200ms ease-in,
+  color 200ms ease-in;
+  &:hover, &:focus-visible, &:focus {
+  @extend %hover;
+  background-color: typo.$o-black;
+  color: typo.$h-clr;
+  }
+}

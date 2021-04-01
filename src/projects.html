@@ -11,120 +11,95 @@
   </head>
 
   <body>
-    <nav class="nav">
-      <a class="nav-logo heading" href="index.html"><i class="fas fa-code"></i> Altus</a>
-      <div class="nav-links">
-        <a class="nav-link " href="https://drive.google.com/file/d/1htQmr5_2ywUoolsRXUJ9buYE7nCMytWB/view?usp=sharing" target="_blank">Resume</a>
-        <a class="nav-link " href="projects.html">Projects</a>
-        <a href="#footer" class="nav-link" id="scroll">Contact</a>
+    <nav class="navbar">
+      <a class="navbar__logo " href="index.html">
+        <i class="fas fa-code"></i>
+      </a>
+      <div class="navbar__links">
+        <a href="https://drive.google.com/file/d/1htQmr5_2ywUoolsRXUJ9buYE7nCMytWB/view?usp=sharing" target="_blank">Resume</a>
+        <a href="projects.html">Projects</a>
+        <a href="#footer" id="scroll">Contact</a>
+      </div>
+      <div class="burger">
+        <div class="line"></div>
+      </div>
+    </nav>
+
+    <section class="section section__projects">
+      <div class="card__container">
+        <!-- Project 1 -->
+        <div class="card card__project__1">
+          <h4 class="card__heading">React Todo List</h4>
+          <div class="card__body">
+            <p>A simple todo list app built with create react app</p>
+          </div>
+          <div class="card__links">
+            <a target="_blank" href="https://github.com/AltusJVR/react-todolist-frontend" class="card__link"><i class="fab fa-github"></i></a>
+            <a target="_blank" href="https://github.com/AltusJVR/react-todolist-backend" class="card__link"><i class="fab fa-github"></i></a>
+            <a target="_blank" href="https://react-todolist-frontend.netlify.app">
+              <i class="fas fa-link "></i>
+            </a>
+          </div>
+        </div>
+        <!-- Project 2 -->
+        <div class="card card__project__2">
+          <h4 class="card__heading">API search.</h4>
+          <div class="card__body">
+            <p>API search app, using the OMDd Database.</p>
+          </div>
+          <div class="card__links">
+            <a target="_blank" href="https://github.com/AltusJVR/movie_search_api" class="card__link"><i class="fab fa-github"></i></a>
+            <a target="_blank" href="https://movie-api-search-altus.glitch.me/">
+              <i class="fas fa-link "></i>
+            </a>
+          </div>
+        </div>
+        <!-- Project 3 -->
+        <div class="card card__project__3">
+          <h4 class="card__heading">Frontend Position Challenge.</h4>
+          <div class="card__body">
+            <p>A coding challenge for a front end developer position.</p>
+          </div>
+          <div class="card__links">
+            <a target="_blank" href="https://github.com/AltusJVR/VivaDecora-Coding-Challenge" class="card__link"><i class="fab fa-github"></i></a>
+            <a target="_blank" href="https://vigilant-bose-b425b3.netlify.app/">
+              <i class="fas fa-link "></i>
+            </a>
+          </div>
+        </div>
+        <!-- Project 4 -->
+        <div class="card card__project__4">
+          <h4 class="card__heading">A website for an old employer.</h4>
+          <div class="card__body">
+            <p>A practice website for an old employer.</p>
+          </div>
+          <div class="card__links">
+            <a target="_blank" href="https://github.com/AltusJVR/guesthomeheroku" class="card__link"><i class="fab fa-github"></i></a>
+            <a target="_blank" href="https://guestathome.herokuapp.com/">
+              <i class="fas fa-link "></i>
+            </a>
+          </div>
+        </div>
       </div>
 
-    </nav>
-    <main id="projects">
-      <section class="project project-1">
-        <div class="card card-1">
-          <div class="card-body">
-            <h2 class="heading card-heading dark-highlight">Movie API</h2>
-            <p class="paragraph">A movie search app (OMDB API).</p>
-            <p class="paragraph">Built Using: </p>
-            <div class="build">
-              <p class="paragraph"><i class="fab fa-node-js "></i> Node.js</p>
-              <p class="paragraph"><i class="fab fa-node-js "></i> Express.js</p>
-              <p class="paragraph"><i class="fab fa-css3 "></i> CSS</p>
-              <p class="paragraph"><i class="fab fa-html5 "></i> HTML5</p>
-            </div>
-          </div>
-          <div class="card-links">
-            <a href="https://github.com/AltusJVR/movie_search_api" class="github-link" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://movie-api-search-altus.glitch.me/" class="live-link" target="_blank"><i class="fas fa-link"></i></a>
-          </div>
-        </div>
-      </section>
 
-      <section class="project project-2">
-        <div class="card card-2">
-          <div class="card-body">
-            <h2 class="heading card-heading dark-highlight">Guesthouse</h2>
-            <p class="paragraph">An example website for one of my previous employers.</p>
-            <p class="paragraph">Built Using: </p>
-            <div class="build">
-              <p class="paragraph"><i class="fab fa-node-js "></i> Node.js</p>
-              <p class="paragraph"><i class="fab fa-node-js "></i> Express.js</p>
-              <p class="paragraph"><i class="fab fa-bootstrap "></i> Bootstrap</p>
-              <p class="paragraph"><i class="fab fa-html5 "></i> HTML5</p>
-            </div>
-          </div>
-          <div class="card-links">
-            <a href="https://github.com/AltusJVR/guesthomeheroku" class="github-link" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://scarlet-pond-desk.glitch.me/" class="live-link" target="_blank"><i class="fas fa-link"></i></a>
-          </div>
-        </div>
-      </section>
 
-      <section class="project project-3">
-        <div class="card card-3">
-          <div class="card-body">
-            <h2 class="heading card-heading dark-highlight">React Todo-List</h2>
-            <p class="paragraph">A simple React.js todo-list app. Built using:</p>
-            <div class="build">
-              <p class="paragraph"><i class="fab fa-node-js "></i> Backend API Node.js</p>
-              <p class="paragraph"><i class="fab fa-node-js "></i> Backend Express.js</p>
-              <p class="paragraph"><i class="fab fa-react"></i> Frontend Create-React-App</p>
-
-            </div>
-          </div>
-          <div class="card-links">
-            <a href="https://github.com/AltusJVR/react-todolist-frontend" class="github-link" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://react-todolist-frontend.netlify.app/" class="live-link" target="_blank"><i class="fas fa-link"></i></a>
-          </div>
-        </div>
-      </section>
-      <section class="project project-4">
-        <div class="card card-4">
-          <div class="card-body">
-            <h2 class="heading card-heading dark-highlight">Bootcamp</h2>
-            <p class="paragraph">A website built as a project during a web developer bootcamp. Built using: </p>
-            <div class="build">
-              <p class="paragraph"><i class="fab fa-node-js "></i> Node.js</p>
-              <p class="paragraph"><i class="fab fa-node-js "></i> Express.js</p>
-              <p class="paragraph"><i class="fab fa-bootstrap "></i> Bootstrap</p>
-              <p class="paragraph"><i class="fab fa-html5 "></i> HTML5</p>
-            </div>
-          </div>
-          <div class="card-links">
-            <a href="https://github.com/AltusJVR/Yelpcamp_Heroku_Deploy" class="github-link" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://altus-yelpcamp-deploy.herokuapp.com/" class="live-link" target="_blank"><i class="fas fa-link"></i></a>
-          </div>
-        </div>
-      </section>
-      <section class="project project-5">
-        <div class="card card-5">
-          <div class="card-body">
-            <h2 class="heading card-heading dark-highlight">Coding challenge</h2>
-            <p class="paragraph">A coding challenge for a recent job interview. Built using:</p>
-            <div class="build">
-              <p class="paragraph"><i class="fab fa-css3 "></i> CSS</p>
-              <p class="paragraph"><i class="fab fa-html5 "></i> HTML5</p>
-              <p class="paragraph"><i class="fab fa-js-square "></i> Javascript</p>
-            </div>
-          </div>
-          <div class="card-links">
-            <a href="https://github.com/AltusJVR/VivaDecora-Coding-Challenge" class="github-link" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://vigilant-bose-b425b3.netlify.app/" class="live-link" target="_blank"><i class="fas fa-link"></i></a>
-          </div>
-        </div>
-      </section>
-    </main>
+    </section>
 
 
 
 
+    <footer class="footer" id="footer">
+      <div class="footer__links">
+        <a href="mailto:albertusbjvr@gmail.com" class="footer-mail mx-5"><i class="far fa-paper-plane mr-1 mail"></i></a>
+        <a href="tel:+5519999200307" class="footer-phone mx-5"><i class="fas fa-phone  tel"></i></a>
+        <a href="https://www.linkedin.com/in/albertus-janse-van-rensburg-3332b1141/" target="_blank" class="footer-linked mx-5"><i class="fab fa-linkedin-in linked "></i></a>
+        <a href="https://github.com/AltusJVR" target="_blank" class="mx-5" id="footer-git"><i class="fab fa-github github"></i></a>
+      </div>
 
-    <footer class="footer-contaier">
-      <a href="mailto:albertusbjvr@gmail.com" class="footer-mail mx-5"><i class="far fa-paper-plane mr-1 footer-icon"></i></a>
-      <a href="tel:+5519999200307" class="footer-phone mx-5"><i class="fas fa-phone footer-icon"></i></a>
-      <a href="https://www.linkedin.com/in/albertus-janse-van-rensburg-3332b1141/" target="_blank" class="footer-linked mx-5"><i class="fab fa-linkedin-in footer-icon"></i></a>
-      <a href="https://github.com/AltusJVR" target="_blank" class="mx-5" id="footer-git"><i class="fab fa-github footer-icon"></i></a>
+      <div class="footer__copy">
+        <p>&copy; Altus Janse Van Rensburg, 2021</p>
+      </div>
     </footer>
     <script src="js/main.js"></script>
   </body>

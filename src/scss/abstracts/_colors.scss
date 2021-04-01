@@ -1,0 +1,138 @@
+
+/*
+==========
+1. Gray color map
+1.1 Gray color var
+==========
+2. blue color map
+2.1 blue color var
+==========
+3. Black overlay color map
+3.1 Black overlay color var
+==========
+4. White overlay color map
+4.1 White overlay color va
+==========
+*/
+
+
+/* 1. Gray color map */
+$gray-clr-map:(
+1: hsl(0, 0%, 100%),
+2: hsl(0, 0%, 90%),
+3: hsl(0, 0%, 80%),
+4: hsl(0, 0%, 70%),
+5: hsl(0, 0%, 60%),
+6: hsl(0, 0%, 50%),
+7: hsl(0, 0%, 40%),
+8: hsl(0, 0%, 30%),
+9: hsl(0, 0%, 20%),
+10:hsl(0, 0%, 5%),
+11:hsl(0, 0%, 0%),
+);
+
+/* 1.1 Gray color var */
+$gray-1:map-get($gray-clr-map, 1);
+$gray-2:map-get($gray-clr-map, 2);
+$gray-3:map-get($gray-clr-map, 3);
+$gray-4:map-get($gray-clr-map, 4);
+$gray-5:map-get($gray-clr-map, 5);
+$gray-6:map-get($gray-clr-map, 6);
+$gray-7:map-get($gray-clr-map, 7);
+$gray-8:map-get($gray-clr-map, 8);
+$gray-9:map-get($gray-clr-map, 9);
+
+
+
+/* 2. h color map */
+$h-clr-map:(
+  1:  hsl(200, 100%, 95%),
+  2:  hsl(200, 100%, 90%),
+  3:  hsl(200, 100%, 80%),
+  4:  hsl(200, 100%, 70%),
+  5:  hsl(200, 90%, 60%),
+  6:  hsl(200, 80%, 50%),
+  7:  hsl(200, 80%, 40%),
+  8:  hsl(200, 80%, 35%),
+  9:  hsl(200, 90%, 30%),
+);
+
+/* a {
+
+  color: #19a1e6;
+} */
+/* 2.1 h color var */
+$h-1:map-get($h-clr-map, 1);
+$h-2:map-get($h-clr-map, 2);
+$h-3:map-get($h-clr-map, 3);
+$h-4:map-get($h-clr-map, 4);
+$h-5:map-get($h-clr-map, 5);
+$h-6:map-get($h-clr-map, 6);
+$h-7:map-get($h-clr-map, 7);
+$h-8:map-get($h-clr-map, 8);
+$h-9:map-get($h-clr-map, 9);
+
+
+/* 3. Black overlay color map */
+$black-overlay-clr-map:(
+  1: rgba(0,0,0,.1),
+  2: rgba(0,0,0,.2),
+  3: rgba(0,0,0,.3),
+  4: rgba(0,0,0,.4),
+  5: rgba(0,0,0,.5),
+);
+
+/* 3.1 Black overlay color var */
+$o-black-1:map-get($black-overlay-clr-map, 1);
+$o-black-2:map-get($black-overlay-clr-map, 2);
+$o-black-3:map-get($black-overlay-clr-map, 3);
+$o-black-4:map-get($black-overlay-clr-map, 4);
+$o-black-5:map-get($black-overlay-clr-map, 5);
+
+/* 4. White overlay color map */
+$white-overlay-clr-map:(
+  1: rgba(225,225,225,.1),
+  2: rgba(225,225,225,.2),
+  3: rgba(225,225,225,.3),
+  4: rgba(225,225,225,.4),
+  5: rgba(225,225,225,.5),
+);
+
+/* 4.1 White overlay color var */
+$o-white-1:map-get($white-overlay-clr-map, 1);
+$o-white-2:map-get($white-overlay-clr-map, 2);
+$o-white-3:map-get($white-overlay-clr-map, 3);
+$o-white-4:map-get($white-overlay-clr-map, 4);
+$o-white-5:map-get($white-overlay-clr-map, 5);
+
+/* 5 Social icons color map */
+
+$social-icons-map:(
+mail:         $h-6,
+instagram:  rgb(245, 180, 77),
+tel:          $h-6,
+github:     rgb(0,0,0),
+javasc:     rgb(218, 195, 27),
+nodejs:     rgb(117, 170, 100),
+parceljs:   rgb(33, 54, 74),
+bootstrap:  rgb(83, 59, 120),
+linked:     rgb(10, 102, 194),
+html:       rgb(228, 77, 38),
+css:        rgb(38, 77, 228),
+scss:       rgb(199, 100, 148),
+git:        rgb(233, 78, 49),
+gitlab:     rgb(219, 65, 40),
+gulp:       rgb(211, 68, 70),
+react:      rgb(79, 176, 202),
+database:   rgb(64, 144, 66),
+netlify:    rgb(62, 169, 188),
+heroku:     rgb(57, 0, 149),
+link:       rgb(62, 62, 62),
+
+);
+
+@each $social, $value in $social-icons-map {
+  .#{$social}{
+    color: $value;
+  }
+}
