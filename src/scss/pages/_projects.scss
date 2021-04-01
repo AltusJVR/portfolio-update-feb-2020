@@ -40,7 +40,7 @@
 .card__project__3:hover, 
 .card__project__4:hover{
   &.card::before{
-    background-color: typo.$o-black;
+    background-color: fade-in(typo.$o-white, .2);
   }
 }
 
