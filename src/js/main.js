@@ -33,7 +33,7 @@ const sectionImg = document.querySelector('.section');
 const parralax = () => {
   console.log(window.scrollY)
   window.addEventListener('scroll', () => {
-    sectionImg.style.backgroundPositionY = `${window.scrollY * 0.05}px`;
+    sectionImg.style.backgroundPositionY = `${window.scrollY * 0.5}px`;
   })
 }
 
