@@ -31,9 +31,7 @@ In this file, there is a map for helper color classes, for example social media 
 
 ```scss
 $social-icons-map:(
-mail:         $h-6, - A color variable in the highlight ccolor map.
 instagram:  rgb(245, 180, 77),
-tel:          $h-6, - A color variable in the highlight ccolor map.
 github:     rgb(0,0,0),
 javasc:     rgb(218, 195, 27),
 nodejs:     rgb(117, 170, 100),
