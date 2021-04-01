@@ -1,0 +1,79 @@
+@use '../base/typo';
+@use '../components/cards';
+
+
+%pos {
+  position: relative;
+  // z-index: 1;
+}
+
+%pseudo {
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+%bgprops {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.section__projects {
+  background-image: url(/src/img/wave6.svg);
+  @extend%bgprops;
+}
+
+.card__project__1 {
+  @extend%pos;
+  z-index: 2;
+  border-radius: 5px;
+}
+
+
+.card__project__1:hover,
+.card__project__2:hover, 
+.card__project__3:hover, 
+.card__project__4:hover{
+  &.card::before{
+    background-color: typo.$o-black;
+  }
+}
+
+.card__project__1::after {
+  @extend%pseudo;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(/src/img/React-Todo-List.jpeg);
+  z-index: -2;
+}
+.card__project__2::after {
+  @extend%pseudo;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(/src/img/movie-api.jpg);
+  z-index: -2;
+}
+.card__project__3::after {
+  @extend%pseudo;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(/src/img/coding-challenge.jpg);
+  z-index: -2;
+}
+.card__project__4::after {
+  @extend%pseudo;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(/src/img/guest@home4u.jpg);
+  z-index: -2;
+}
+
