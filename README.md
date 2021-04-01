@@ -1,3 +1,5 @@
+ [![Netlify Status](https://api.netlify.com/api/v1/badges/4dfedd28-4879-42f2-893a-ea351ecb2a11/deploy-status)](https://app.netlify.com/sites/altus-portfolio/deploys)
+ 
  [1. How to use:](#1-how-to-use)
  [2. Important SCSS](#2-important-scss)
        [2.1. Colors](#21-colors)
