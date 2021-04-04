@@ -38,7 +38,8 @@
 .card__project__1:hover,
 .card__project__2:hover, 
 .card__project__3:hover, 
-.card__project__4:hover{
+.card__project__4:hover, 
+.card__project__5:hover {
   &.card::before{
     background-color: fade-in(typo.$o-white, .2);
   }
@@ -74,6 +75,14 @@
   background-repeat: no-repeat;
   background-position: center;
   background-image: url(/src/img/guest@home4u.jpg);
+  z-index: -2;
+}
+.card__project__5::after {
+  @extend%pseudo;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(/src/img/scss_theme.JPG);
   z-index: -2;
 }
 
