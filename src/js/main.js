@@ -18,6 +18,7 @@ const toggle = () => {
     navLinksA.forEach((link, index) => {
       if (link.style.animation) {
         link.style.animation = '';
+        contact.style.clipPath = '';
       } else {
         link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + .3}s`;
       }
@@ -31,10 +32,25 @@ toggle();
 const sectionImg = document.querySelector('.section');
 
 const parralax = () => {
-  console.log(window.scrollY)
   window.addEventListener('scroll', () => {
     sectionImg.style.backgroundPositionY = `${window.scrollY * 0.5}px`;
   })
 }
 
 parralax()
+
+
+const contact = document.querySelector('.section__contact');
+const contactNavlink = document.querySelector('#scroll');
+
+const showContact = () => {
+  contactNavlink.addEventListener('click', () => {
+    if (!contact.style.clipPath) {
+      contact.style.clipPath = 'circle(75% at 50% 50%)'
+    } else {
+      contact.style.clipPath = ''
+    }
+  })
+}
+
+showContact()
