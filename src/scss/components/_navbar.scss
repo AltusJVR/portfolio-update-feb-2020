@@ -9,10 +9,8 @@ $nav-height: 10vh;
   height: 10vh;
   width: 100%;
   border-bottom: 1px solid typo.$h-clr;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
+  position: relative;
+
   height: 10vh;
   z-index: 3;
   background-color: typo.$bg-clr;
