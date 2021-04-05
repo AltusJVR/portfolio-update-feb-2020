@@ -31,10 +31,25 @@ toggle();
 const sectionImg = document.querySelector('.section');
 
 const parralax = () => {
-  console.log(window.scrollY)
   window.addEventListener('scroll', () => {
     sectionImg.style.backgroundPositionY = `${window.scrollY * 0.5}px`;
   })
 }
 
 parralax()
+
+
+const footer = document.querySelector('.section__contact');
+const footerContact = document.querySelector('#scroll');
+
+const showContact = () => {
+  footerContact.addEventListener('click', () => {
+    if (!footer.style.clipPath) {
+      footer.style.clipPath = 'circle(75% at 50% 50%)'
+    } else {
+      footer.style.clipPath = ''
+    }
+  })
+}
+
+showContact()
