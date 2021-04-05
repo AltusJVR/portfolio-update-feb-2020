@@ -42,6 +42,7 @@ parralax()
 
 const contact = document.querySelector('.section__contact');
 const contactNavlink = document.querySelector('#scroll');
+const contactBurger = document.querySelector('.contact__burger')
 
 const showContact = () => {
   contactNavlink.addEventListener('click', () => {
@@ -53,4 +54,15 @@ const showContact = () => {
   })
 }
 
+const closeContact = () => {
+  contactBurger.addEventListener('click', () => {
+    if (!contact.style.clipPath) {
+      contact.style.clipPath = 'circle(75% at 50% 50%)'
+    } else {
+      contact.style.clipPath = ''
+    }
+  })
+}
+
+closeContact()
 showContact()
