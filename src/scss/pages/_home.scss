@@ -26,7 +26,33 @@
   background-attachment: fixed;
 }
 
-.section__1 {
+
+.home {
+@extend%bgprops;
+@extend%pos;
+background-image:  url(/src/img/wave3.svg);
+background-color: typo.$o-black;
+background-blend-mode: darken;
+z-index: 1;
+}
+
+.home::before {
+  @extend%pseudo;
+  background-color:typo.$o-black;
+  z-index: -1;
+}
+
+
+
+.home::after{
+  @extend%bgprops;
+  @extend%pseudo;
+  background-image: url(/src/img/wave1.svg), url(/src/img/wave2.svg);
+  background-color: typo.$o-black;
+  background-blend-mode: hard-light;
+  z-index: -1;
+}
+/* .section__1 {
 @extend%pos;
 @extend%bgprops;
 background-image: url(/src/img/wave3.svg);
@@ -54,7 +80,7 @@ z-index: 1;
   background-image: url(/src/img/wave2.svg), url(/src/img/wave1.svg), url(/src/img/wave2.svg), url(/src/img/wave2.svg);
   padding: 1em 0;
   background-blend-mode: darken;
-}
+} */
 
 
 .card__container {
