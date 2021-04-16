@@ -31,14 +31,14 @@
 @extend%bgprops;
 @extend%pos;
 background-image:  url(/src/img/wave3.svg);
-background-color: typo.$o-black;
-background-blend-mode: darken;
+/* background-color: rgba(0,0,0,.2);
+background-blend-mode: darken; */
 z-index: 1;
 }
 
 .home::before {
   @extend%pseudo;
-  background-color:typo.$o-black;
+  background-color:typo.$o-white; 
   z-index: -1;
 }
 
@@ -48,7 +48,7 @@ z-index: 1;
   @extend%bgprops;
   @extend%pseudo;
   background-image: url(/src/img/wave1.svg), url(/src/img/wave2.svg);
-  background-color: typo.$o-black;
+  // background-color: typo.$o-white;
   background-blend-mode: hard-light;
   z-index: -1;
 }

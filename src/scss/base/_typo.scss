@@ -43,13 +43,13 @@ $normal-font:map-get($map: $use-map, $key: body );
 
 
 /* Set bg, highligh and font color from color map */
-$bg-clr: colors.$gray-8;
+$bg-clr: colors.$gray-1;
 $h-clr: colors.$h-6;
-$font-clr: colors.$gray-1;
-$h-font-clr: colors.$gray-1;
+$font-clr: colors.$gray-9;
+$h-font-clr: colors.$gray-9;
 $nav-overlay-clr: colors.$gray-9;
-$o-white: colors.$o-white-1;
-$o-black: colors.$o-black-3;
+$o-white: colors.$o-white-5;
+$o-black: colors.$o-black-5;
 $body-font-size: 1.1em;
 $body-lh: 1.6;
 // $section-overlay-clr: rgba(255,255,255,.2);

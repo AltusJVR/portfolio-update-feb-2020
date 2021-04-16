@@ -27,10 +27,18 @@
   transform 200ms ease-in;
 }
 
-.card::before, .card__home::before {
+.card::before {
+  background-color: typo.$bg-clr;
+  border: 2px solid typo.$o-black;
+}
+.card__home::before {
+  background-color: fade-out(typo.$bg-clr, .3);
+}
+
+ .card::before,.card__home::before {
   border-radius: 5px;
   @extend%pseudo;
-  background-color: lighten(typo.$bg-clr, 50%);
+  
   z-index: -1;
   transition: background-color 200ms ease-in;
 }
@@ -45,7 +53,7 @@
 }
 
 .card__heading, .card__body {
-  color: typo.$bg-clr;
+  // color: typo.$bg-clr;
   transition: opacity 200ms ease-in;
 }
 
@@ -65,7 +73,6 @@
 
 
 .card__links {
-  outline: 2px soild pink;
   position: relative;
   font-size: 2em;
   width: 100%;
@@ -73,13 +80,10 @@
   justify-content: space-around;
   z-index: 2;
   height: 20%;
+  color: black;
   a {
     display: inline-block;
     font-size: 1em;
-    transition: 
-    transform 200ms ease-in,
-    color 200ms ease-out;
-    color: typo.$bg-clr;
   }
 
   a {
@@ -102,15 +106,9 @@
   }
 }
 
-.card:hover a {
-    color: darken(typo.$bg-clr, 20%) !important;
-}
-
 .card:hover.card::after {
   opacity: 1;
 }
 
-// .card:hover .card::before{
-//   background-color: red;
-// }
+
 
