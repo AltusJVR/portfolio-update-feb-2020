@@ -39,7 +39,7 @@ z-index: 1;
   @extend%pseudo;
   @extend%pos;
   @extend%bgprops;
-  background: linear-gradient(180deg, hsla(0, 0%, 100%, 0.8),hsla(180, 50%, 50%, 0.8));
+  background: linear-gradient(180deg, hsla(0, 0%, 50%, 0.8),hsla(180, 50%, 50%, 0.8));
   z-index: -1;
 }
 
