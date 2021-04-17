@@ -26,7 +26,11 @@
 .projects {
   background-image: url(/src/img/wave6.svg);
   @extend%bgprops;
+  height: 100%;
+  background-color: typo.$o-white;
 }
+
+
 
 .card__project__1 {
   @extend%pos;
@@ -41,7 +45,7 @@
 .card__project__4:hover, 
 .card__project__5:hover {
   &.card::before{
-    background-color: fade-in(typo.$o-white, .2);
+    background-color: rgba(255, 255, 255, 0.2);
   }
 }
 
