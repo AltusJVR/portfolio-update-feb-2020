@@ -30,17 +30,18 @@
 .home {
 @extend%bgprops;
 @extend%pos;
-background-image:  url(/src/img/wave2.svg), url(/src/img/wave3.svg);
+background-image:  url(/src/img/wave6.svg);
 z-index: 1;
-
+background-blend-mode: difference;
+background-color:hsla(0, 50%, 1%, 1);
 }
 
 .home::before {
   @extend%pseudo;
   @extend%pos;
   @extend%bgprops;
-  background: linear-gradient(180deg, hsla(0, 0%, 80%, 0.8),hsla(180, 50%, 50%, 0.8));
   z-index: -1;
+  background-color: typo.$o-black;
 }
 
 

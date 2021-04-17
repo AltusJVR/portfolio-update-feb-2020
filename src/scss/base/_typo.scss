@@ -43,10 +43,10 @@ $normal-font:map-get($map: $use-map, $key: body );
 
 
 /* Set bg, highligh and font color from color map */
-$bg-clr: colors.$gray-1;
+$bg-clr: colors.$gray-9;
 $h-clr: colors.$h-6;
-$font-clr: colors.$gray-9;
-$h-font-clr: colors.$gray-9;
+$font-clr: colors.$gray-1;
+$h-font-clr: colors.$gray-1;
 $nav-overlay-clr: colors.$gray-9;
 $o-white: colors.$o-white-3;
 $o-black: colors.$o-black-5;

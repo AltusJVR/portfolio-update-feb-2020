@@ -28,7 +28,7 @@
 }
 
 .card::before {
-  background-color: darken(typo.$bg-clr, 10%);
+  background-color: lighten(typo.$bg-clr, 10%);
 }
 .card__home::before {
   background-color: fade-out(typo.$bg-clr, .2);

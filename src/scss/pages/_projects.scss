@@ -24,11 +24,12 @@
 }
 
 .projects {
-  background-image: url(/src/img/wave6.svg);
   @extend%bgprops;
-  height: 100%;
-  background-color: typo.$o-white;
-  position: relative;
+  @extend%pos;
+  background-image:  url(/src/img/wave6.svg);
+  z-index: 1;
+  background-blend-mode: difference;
+  background-color:hsla(0, 50%, 1%, 1);
 }
 
 .projects::before {
@@ -36,9 +37,7 @@
   @extend%pseudo;
   @extend%bgprops;
   min-height: 100vh;
-  height: 100%;
-  background: linear-gradient(180deg, hsla(0, 0%, 100%, 0.5),hsla(180, 50%, 50%, 0.5));
-  z-index: -1;
+  background-color: typo.$o-black;
 }
 
 
