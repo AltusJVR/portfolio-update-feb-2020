@@ -1,7 +1,7 @@
 {
   "name": "portfolio-update",
   "version": "2.0.0",
-  "description": "",
+  "description": "Portfolio Website",
   "scripts": {
     "start": "rm -rf tmp && parcel serve './src/index.html' --no-cache --dist-dir tmp -p 8080",
     "deploy": "parcel build 'src/index.html' --no-cache --dist-dir dist --no-content-hash",
