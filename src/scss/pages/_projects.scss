@@ -26,7 +26,11 @@
 .projects {
   background-image: url(/src/img/wave6.svg);
   @extend%bgprops;
+  height: 100%;
+  background-color: typo.$o-white;
 }
+
+
 
 .card__project__1 {
   @extend%pos;
