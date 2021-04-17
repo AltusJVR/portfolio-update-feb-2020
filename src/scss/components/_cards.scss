@@ -28,11 +28,10 @@
 }
 
 .card::before {
-  background-color: typo.$bg-clr;
-  border: 2px solid typo.$o-black;
+  background-color: darken(typo.$bg-clr, 10%);
 }
 .card__home::before {
-  background-color: fade-out(typo.$bg-clr, .3);
+  background-color: fade-out(typo.$bg-clr, .2);
 }
 
  .card::before,.card__home::before {
