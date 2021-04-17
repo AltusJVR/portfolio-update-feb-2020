@@ -25,7 +25,7 @@ $available-font-maps:(
   12: fonts.$fira-sans-map,
 );
 /* Select the font theme from the above map 1 - 12 */
-$font-theme: 12;
+$font-theme: 5;
 
 /* Lora - good with yellow */
 /* Oswald good with yellow */
@@ -48,7 +48,7 @@ $h-clr: colors.$h-6;
 $font-clr: colors.$gray-9;
 $h-font-clr: colors.$gray-9;
 $nav-overlay-clr: colors.$gray-9;
-$o-white: colors.$o-white-5;
+$o-white: colors.$o-white-3;
 $o-black: colors.$o-black-5;
 $body-font-size: 1.1em;
 $body-lh: 1.6;
