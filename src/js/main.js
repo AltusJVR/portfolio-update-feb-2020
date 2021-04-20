@@ -26,8 +26,30 @@ const toggle = () => {
   })
 }
 
-toggle();
+const keyToggle = () => {
+  let toggle = 0
+  burger.addEventListener('keydown', (e) => {
 
+    if (!e.key === Tab) {
+
+      navLinks.classList.toggle('nav-active')
+      burger.classList.toggle('toggle')
+      navLinksA.forEach((link, index) => {
+        if (link.style.animation) {
+          link.style.animation = '';
+          contact.style.clipPath = ''
+          link.setAttribute("tabindex", -1)
+        } else {
+          link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + .3}s`;
+          link.setAttribute("tabindex", 0)
+        }
+      })
+    }
+  })
+}
+
+toggle();
+keyToggle();
 
 const container = document.querySelector('.container');
 
@@ -61,8 +83,19 @@ const closeContact = () => {
     } else {
       contact.style.clipPath = ''
     }
+  });
+};
+
+const keyCloseContact = () => {
+  contactBurger.addEventListener('keydown', (e) => {
+    e.preventDefault
+    if (!contact.style.clipPath && !e.key === "Tab") {
+      contact.style.clipPath = 'circle(75% at 50% 50%)'
+    } else {
+      contact.style.clipPath = ''
+    }
   })
 }
-
+keyCloseContact()
 closeContact()
 showContact()
