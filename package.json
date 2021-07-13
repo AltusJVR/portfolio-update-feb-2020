@@ -15,7 +15,10 @@
     "parcel": "^2.0.0-nightly.627"
   },
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.0.0-nightly.632"
+    "@parcel/packager-raw-url": "^2.0.0-nightly.2393",
+    "@parcel/transformer-image": "^2.0.0-nightly.2393",
+    "@parcel/transformer-sass": "^2.0.0-nightly.632",
+    "@parcel/transformer-webmanifest": "^2.0.0-nightly.2393"
   },
   "browserslist": [
     "> 0.2%",
