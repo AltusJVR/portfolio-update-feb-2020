@@ -25,7 +25,7 @@ $available-font-maps: (
   12: fonts.$fira-sans-map,
 );
 /* Select the font theme from the above map 1 - 12 */
-$font-theme: 9;
+$font-theme: 4;
 
 /* Lora - good with yellow */
 /* Oswald good with yellow */
@@ -123,6 +123,10 @@ body {
   color: $font-clr;
   font-size: $body-font-size;
   line-height: $body-lh;
+}
+.card__text {
+  font-family: map-get($map: $use-map, $key: body);
+  font-size: $body-font-size * 0.8;
 }
 
 /* set a font for all headings from a font pairing map */
