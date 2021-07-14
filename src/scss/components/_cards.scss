@@ -2,14 +2,15 @@
 
 %pseudo {
   position: absolute;
-  content: '';
+  content: "";
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
 }
 
-.card, .card__home {
+.card,
+.card__home {
   // outline: 2px solid red;
   display: flex;
   flex-direction: column;
@@ -22,28 +23,27 @@
   padding: 1em;
   position: relative;
   z-index: 1;
-  transition: 
-  background-color 500ms ease-in,
-  transform 200ms ease-in;
+  transition: background-color 500ms ease-in, transform 200ms ease-in;
 }
 
 .card::before {
-  background-color: lighten(typo.$bg-clr, 10%);
+  background-color: lighten(typo.$bg-clr, 20%);
 }
 .card__home::before {
-  background-color: fade-out(typo.$bg-clr, .2);
+  background-color: lighten(typo.$bg-clr, 50%);
 }
 
- .card::before,.card__home::before {
+.card::before,
+.card__home::before {
   border-radius: 5px;
   @extend%pseudo;
-  
+
   z-index: -1;
   transition: background-color 200ms ease-in;
 }
 .card::after {
   border-radius: 5px;
-  opacity: .5;
+  opacity: 0.5;
   transition: opacity 200ms ease-in 50ms;
 }
 
@@ -51,7 +51,8 @@
   cursor: auto;
 }
 
-.card__heading, .card__body {
+.card__heading,
+.card__body {
   // color: typo.$bg-clr;
   transition: opacity 200ms ease-in;
 }
@@ -69,8 +70,6 @@
   font-size: 0.6em;
 }
 
-
-
 .card__links {
   position: relative;
   font-size: 2em;
@@ -86,13 +85,14 @@
   }
 
   a {
-    &:hover, &:focus, &:focus-visible {
+    &:hover,
+    &:focus,
+    &:focus-visible {
       outline: none;
       transform: scale(1.3);
-      transform-origin: center ;
+      transform-origin: center;
     }
   }
-
 }
 
 .card:hover {
@@ -100,7 +100,8 @@
     transform: scale(1.1);
   }
   background-color: transparent;
-  .card__body, .card__heading{
+  .card__body,
+  .card__heading {
     opacity: 0;
   }
 }
@@ -108,6 +109,3 @@
 .card:hover.card::after {
   opacity: 1;
 }
-
-
-

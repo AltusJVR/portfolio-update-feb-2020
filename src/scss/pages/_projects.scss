@@ -1,7 +1,6 @@
 @use '../base/typo';
 @use '../components/cards';
 
-
 %pos {
   position: relative;
   // z-index: 1;
@@ -9,7 +8,7 @@
 
 %pseudo {
   position: absolute;
-  content: '';
+  content: "";
   top: 0;
   right: 0;
   bottom: 0;
@@ -26,10 +25,10 @@
 .projects {
   @extend%bgprops;
   @extend%pos;
-  background-image:  url(/src/img/wave6.svg);
+  background-image: url(/src/img/wave6.svg);
   z-index: 1;
-  background-blend-mode: difference;
-  background-color:hsla(0, 50%, 1%, 1);
+  background-blend-mode: hard-light;
+  background-color: rgb(190, 245, 255);
 }
 
 .projects::before {
@@ -40,21 +39,18 @@
   background-color: typo.$o-black;
 }
 
-
-
 .card__project__1 {
   @extend%pos;
   z-index: 2;
   border-radius: 5px;
 }
 
-
 .card__project__1:hover,
-.card__project__2:hover, 
-.card__project__3:hover, 
-.card__project__4:hover, 
+.card__project__2:hover,
+.card__project__3:hover,
+.card__project__4:hover,
 .card__project__5:hover {
-  &.card::before{
+  &.card::before {
     background-color: rgba(255, 255, 255, 0.2);
   }
 }
@@ -99,6 +95,3 @@
   background-image: url(/src/img/scss_theme.JPG);
   z-index: -2;
 }
-
-
-
