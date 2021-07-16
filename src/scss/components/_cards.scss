@@ -27,7 +27,7 @@
 }
 
 .card::before {
-  background-color: lighten(typo.$bg-clr, 50%);
+  background-color: lighten(typo.$bg-clr, 35%);
 }
 .card__home::before {
   background-color: lighten(typo.$bg-clr, 80%);
@@ -49,6 +49,7 @@
 
 .card__home {
   cursor: auto;
+  font-size: 0.8em;
 }
 
 .card__heading,

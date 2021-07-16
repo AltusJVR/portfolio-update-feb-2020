@@ -95,7 +95,8 @@ z-index: 1;
 .card__1,
 .card__2,
 .card__3 {
-  width: 15%;
+  width: 20%;
+  font-size: 1.1em;
 }
 
 .card__1,
@@ -110,8 +111,9 @@ z-index: 1;
   .card__1,
   .card__2,
   .card__3 {
-    width: 30%;
+    width: 35%;
     align-items: center;
+    font-size: 1em;
   }
   .card__project__1,
   .card__project__2,
@@ -133,8 +135,9 @@ z-index: 1;
   .card__1,
   .card__2,
   .card__3 {
-    width: 60%;
+    width: 65%;
     align-items: center;
+    font-size: 1.2em;
   }
   .card__project__1,
   .card__project__2,
@@ -151,6 +154,9 @@ z-index: 1;
   .card__3 {
     width: 80%;
     align-items: center;
+    font-size: 1.1em;
+    padding: 0.2em 0;
+    margin: 0.8em 0;
   }
 
   .card__container {
@@ -177,9 +183,11 @@ z-index: 1;
   .card__1,
   .card__2,
   .card__3 {
-    width: 100%;
+    width: 90%;
     align-items: center;
     margin: 0.5em 0;
+    padding: 0;
+    font-size: 1.2em;
   }
 
   .card__project__1,
