@@ -27,10 +27,10 @@
 }
 
 .card::before {
-  background-color: lighten(typo.$bg-clr, 20%);
+  background-color: lighten(typo.$bg-clr, 50%);
 }
 .card__home::before {
-  background-color: lighten(typo.$bg-clr, 50%);
+  background-color: lighten(typo.$bg-clr, 80%);
 }
 
 .card::before,
@@ -55,6 +55,7 @@
 .card__body {
   // color: typo.$bg-clr;
   transition: opacity 200ms ease-in;
+  font-size: 1.75em;
 }
 
 .card__body {
@@ -63,7 +64,7 @@
   align-items: center;
   justify-content: space-around;
   height: 100%;
-  font-size: 1.5em;
+  font-size: 1.8em;
 }
 
 .card__body p {

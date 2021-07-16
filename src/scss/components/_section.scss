@@ -1,16 +1,15 @@
 .section {
   display: flex;
   flex-direction: column;
-  align-items: center; 
+  align-items: center;
   justify-content: center;
-  min-height: 80vh;  
+  min-height: 80vh;
   height: 100%;
   padding: 0 2em;
   p {
     max-width: 65ch;
     width: 100%;
   }
-
 }
 
 p + p {
@@ -19,4 +18,9 @@ p + p {
 
 section > h2 {
   margin-top: 1em;
-} 
+}
+
+section > h4 {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
