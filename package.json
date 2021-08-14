@@ -6,7 +6,7 @@
 		"url": "https://github.com/AltusJVR/portfolio-update-feb-2020.git"
 	},
 	"scripts": {
-		"start": "rm -rf tmp && parcel serve './src/index.html' --dist-dir tmp -p 8080 --no-cache",
+		"start": "rm -rf tmp && parcel serve './src/index.html' --dist-dir tmp -p 8080",
 		"deploy": "parcel build 'src/index.html' --no-cache --dist-dir dist --no-content-hash",
 		"dev": "rm -rf dist && parcel build 'src/index.html' --dist-dir dist --no-content-hash --public-url ./",
 		"port": "ngrok http 8080",
@@ -19,12 +19,12 @@
 		"not dead"
 	],
 	"dependencies": {
-		"parcel": "^2.0.0-rc.0"
+		"parcel": "^2.0.0-nightly.776"
 	},
 	"devDependencies": {
-		"@parcel/packager-raw-url": "^2.0.0-rc.0",
-		"@parcel/transformer-image": "^2.0.0-rc.0",
-		"@parcel/transformer-sass": "^2.0.0-rc.0",
-		"@parcel/transformer-webmanifest": "^2.0.0-rc.0"
+		"@parcel/packager-raw-url": "^2.0.0-nightly.2400",
+		"@parcel/transformer-image": "^2.0.0-nightly.2400",
+		"@parcel/transformer-sass": "^2.0.0-nightly.778",
+		"@parcel/transformer-webmanifest": "^2.0.0-nightly.2400"
 	}
 }
