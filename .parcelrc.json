@@ -4,8 +4,7 @@
 	"transformers": {
 		"*.scss": ["@parcel/transformer-sass"],
 		"*.css": ["@parcel/transformer-postcss"],
-		"*.html": ["@parcel/transformer-posthtml"],
-		"*.{png,jpg,jpeg,svg,...}": "[@parcel/tranformer-image]"
+		"*.html": ["@parcel/transformer-posthtml"]
 	},
 
 	"namers": ["@parcel/namer-default"],
