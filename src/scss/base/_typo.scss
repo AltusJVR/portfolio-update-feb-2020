@@ -26,7 +26,7 @@ $available-font-maps: (
 	12: fonts.$fira-sans-map,
 );
 /* Select the font theme from the above map 1 - 12 */
-$font-theme: 4;
+$font-theme: 9;
 
 /* Lora - good with yellow */
 /* Oswald good with yellow */
@@ -62,10 +62,10 @@ $h-clr: colors.$h-6;
 $font-clr: colors.$gray-1;
 $h-font-clr: colors.$gray-1;
 $nav-overlay-clr: colors.$gray-9;
-$o-white: colors.$o-white-3;
-$o-black: colors.$o-black-5;
+$o-white: colors.$o-white-1;
+$o-black: colors.$o-black-3;
 $body-font-size: 1.1em;
-$body-lh: 1.6;
+$body-lh: 1.9;
 // $section-overlay-clr: rgba(255,255,255,.2);
 
 /* Default Margin for elemets margin bottom */
