@@ -18,8 +18,7 @@
 	"optimizers": {
 		"*.js": ["@parcel/optimizer-uglify"],
 		"*.css": ["@parcel/optimizer-cssnano"],
-		"*.html": ["@parcel/optimizer-htmlnano"],
-		"*.{png,jpg,jpeg,svg,...}": ["@parcel/optimizer-imagemin"]
+		"*.html": ["@parcel/optimizer-htmlnano"]
 	},
 	"reporters": ["@parcel/reporter-cli", "@parcel/reporter-dev-server"]
 }

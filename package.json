@@ -23,6 +23,7 @@
 	},
 	"devDependencies": {
 		"@parcel/packager-raw-url": "^2.0.0-nightly.2400",
+		"@parcel/transformer-image": "^2.0.0-nightly.2400",
 		"@parcel/transformer-sass": "^2.0.0-nightly.778",
 		"@parcel/transformer-webmanifest": "^2.0.0-nightly.2400"
 	}
