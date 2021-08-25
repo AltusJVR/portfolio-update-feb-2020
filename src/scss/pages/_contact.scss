@@ -11,10 +11,58 @@
 
 .contact__form input {
 	width: 100%;
+	border-radius: 5px;
+	outline: none;
+	border: none;
+	transition: transform 100ms ease-in;
+}
+
+.contact__form input:focus {
+	outline: none;
+	border: none;
+	transform: scale(1.1);
+	transition: transform 100ms ease-in;
 }
 
 .contact__form textarea {
 	margin: 0 5em;
 	margin-bottom: 1em;
 	width: 100%;
+	border-radius: 5px;
+	outline: none;
+	border: none;
+	transition: transform 100ms ease-in;
+}
+
+.contact__form textarea:focus {
+	border: none;
+	outline: none;
+	transform: scale(1.1);
+	transition: transform 100ms ease-in;
+}
+
+button {
+	border-radius: 5px;
+	outline: none;
+	border: none;
+	background-color: #333;
+	color: #fff;
+	outline: 2px solid #fff;
+	padding: 0.5em 2em;
+	transition: transform 200ms ease-in;
+}
+
+button:focus,
+button:hover {
+	border: none;
+	transform: scale(1.2);
+	transition: transform 200ms ease-in;
+}
+
+.recaptcha {
+	margin: 1em 0;
+	width: 50%;
+	height: clamp(12vh, 15vh, 20vh);
+	border-radius: 10px;
+	background-color: red;
 }
