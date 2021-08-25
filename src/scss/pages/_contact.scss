@@ -60,9 +60,11 @@ button:hover {
 }
 
 .recaptcha {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	margin: 1em 0;
 	width: 50%;
 	height: clamp(12vh, 15vh, 20vh);
 	border-radius: 10px;
-	background-color: red;
 }
