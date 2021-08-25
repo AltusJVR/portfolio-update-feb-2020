@@ -6,6 +6,7 @@
 		"map",
 		"optimizer",
 		"parcel",
+		"recaptcha",
 		"runtimes",
 		"sitekey"
 	]
