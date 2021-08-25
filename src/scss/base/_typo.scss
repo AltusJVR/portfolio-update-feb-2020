@@ -132,7 +132,7 @@ body {
 
 /* set a font for all headings from a font pairing map */
 @each $heading in fonts.$heading {
-	/* #{$heading} destrcutures $Heading map from _fonts */
+	/* #{$heading} destructors $Heading map from _fonts */
 	#{$heading} {
 		font-family: map-get($map: $use-map, $key: heading);
 		font-weight: checkMapFontWeight($use-map, h-w);
