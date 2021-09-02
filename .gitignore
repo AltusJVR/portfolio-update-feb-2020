@@ -9,4 +9,6 @@ dist/
 notes.MD
 /src/css
 .vscode/settings.json
-.vscode/
+/.vscode/
+.vscode/settings.json
+.vscode/settings.json
