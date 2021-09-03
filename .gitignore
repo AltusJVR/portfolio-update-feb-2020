@@ -8,5 +8,4 @@ tmp/
 dist/
 notes.MD
 /src/css
-.vscode/settings.json
-.vscode/
+
