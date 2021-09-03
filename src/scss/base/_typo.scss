@@ -12,18 +12,18 @@ Set the font family pairing
 */
 
 $available-font-maps: (
-	1: fonts.$playfair-map,
-	2: fonts.$lora-map,
-	3: fonts.$oxygen-map,
-	4: fonts.$arvo-map,
-	5: fonts.$work-sans-map,
-	6: fonts.$oswald-map,
-	7: fonts.$unica-map,
-	8: fonts.$vollkorn-map,
-	9: fonts.$dosis-map,
-	10: fonts.$estaban-map,
-	11: fonts.$poppins-map,
-	12: fonts.$fira-sans-map,
+  1: fonts.$playfair-map,
+  2: fonts.$lora-map,
+  3: fonts.$oxygen-map,
+  4: fonts.$arvo-map,
+  5: fonts.$work-sans-map,
+  6: fonts.$oswald-map,
+  7: fonts.$unica-map,
+  8: fonts.$vollkorn-map,
+  9: fonts.$dosis-map,
+  10: fonts.$estaban-map,
+  11: fonts.$poppins-map,
+  12: fonts.$fira-sans-map,
 );
 /* Select the font theme from the above map 1 - 12 */
 $font-theme: 4;
@@ -33,24 +33,24 @@ $font-theme: 4;
 /* Esteban good with yellow */
 
 $use-map: map-get(
-	$map: $available-font-maps,
-	$key: $font-theme,
+  $map: $available-font-maps,
+  $key: $font-theme,
 );
 $font-1: map-get(
-	$map: $use-map,
-	$key: import1,
+  $map: $use-map,
+  $key: import1,
 );
 $font-2: map-get(
-	$map: $use-map,
-	$key: import2,
+  $map: $use-map,
+  $key: import2,
 );
 $big-font: map-get(
-	$map: $use-map,
-	$key: heading,
+  $map: $use-map,
+  $key: heading,
 );
 $normal-font: map-get(
-	$map: $use-map,
-	$key: body,
+  $map: $use-map,
+  $key: body,
 );
 /* import only fonts that are used in the selected map */
 @import url($font-1);
@@ -68,83 +68,83 @@ $body-font-size: 1.1em;
 $body-lh: 1.9;
 // $section-overlay-clr: rgba(255,255,255,.2);
 
-/* Default Margin for elemets margin bottom */
+/* Default Margin for elements margin bottom */
 $margin-b: 0.8em;
 
 /* extracts the font weight value from the all font weights map in _fonts */
 @function setFontWeight($font-w) {
-	@if $font-w != null {
-		@return map-get($map: fonts.$all-weights, $key: $font-w);
-	} @else {
-		@warn 'fontweight not found';
-	}
+  @if $font-w != null {
+    @return map-get($map: fonts.$all-weights, $key: $font-w);
+  } @else {
+    @warn 'fontweight not found';
+  }
 }
 
 /* Check what font weight is specified in the font map and assigns a weight value from a font weight map in _fonts */
 
 @function checkMapFontWeight($map, $target) {
-	$w: map-get(
-		$map: $map,
-		$key: $target,
-	);
-	@if $w == null {
-		@return 'something went wrong';
-	}
-	@if $w != null {
-		@return setFontWeight($w);
-	}
+  $w: map-get(
+    $map: $map,
+    $key: $target,
+  );
+  @if $w == null {
+    @return 'something went wrong';
+  }
+  @if $w != null {
+    @return setFontWeight($w);
+  }
 }
 
 /* 3.2 Letter spacing modifier */
 @function letter-spacing() {
-	@if (map-get($map: $use-map, $key: heading-ls) == null) {
-		@return 50;
-	} @else {
-		@return map-get($map: $use-map, $key: heading-ls);
-	}
+  @if (map-get($map: $use-map, $key: heading-ls) == null) {
+    @return 50;
+  } @else {
+    @return map-get($map: $use-map, $key: heading-ls);
+  }
 }
 
 $ls: letter-spacing();
 /* 3.2.1 Letter Spacing -map */
 $heading-ls: (
-	h1: math.div(2.5em, $ls),
-	h2: math.div(2.2em, $ls),
-	h3: math.div(1.85em, $ls),
-	h4: math.div(1.6em, $ls),
-	h5: math.div(1.35em, $ls),
-	h6: math.div(1.15em, $ls),
+  h1: math.div(2.5em, $ls),
+  h2: math.div(2.2em, $ls),
+  h3: math.div(1.85em, $ls),
+  h4: math.div(1.6em, $ls),
+  h5: math.div(1.35em, $ls),
+  h6: math.div(1.15em, $ls),
 );
 
 /* Set a font pairing map from fonts on the body */
 body {
-	font-family: map-get($map: $use-map, $key: body);
-	font-weight: checkMapFontWeight($use-map, body-weight);
-	font-style: map-get($map: $use-map, $key: #{b-s});
-	background-color: $bg-clr;
-	color: $font-clr;
-	font-size: $body-font-size;
-	line-height: $body-lh;
+  font-family: map-get($map: $use-map, $key: body);
+  font-weight: checkMapFontWeight($use-map, body-weight);
+  font-style: map-get($map: $use-map, $key: #{b-s});
+  background-color: $bg-clr;
+  color: $font-clr;
+  font-size: $body-font-size;
+  line-height: $body-lh;
 }
 .card__text {
-	font-family: map-get($map: $use-map, $key: body);
-	font-size: $body-font-size * 0.8;
+  font-family: map-get($map: $use-map, $key: body);
+  font-size: $body-font-size * 0.8;
 }
 
 /* set a font for all headings from a font pairing map */
 @each $heading in fonts.$heading {
-	/* #{$heading} destructors $Heading map from _fonts */
-	#{$heading} {
-		font-family: map-get($map: $use-map, $key: heading);
-		font-weight: checkMapFontWeight($use-map, h-w);
-		font-style: map-get($map: $use-map, $key: #{h-s});
-		color: $h-font-clr;
-		font-size: map-get($map: fonts.$heading-size, $key: $heading);
-		letter-spacing: map-get($map: $heading-ls, $key: #{$heading});
-	}
+  /* #{$heading} destructors $Heading map from _fonts */
+  #{$heading} {
+    font-family: map-get($map: $use-map, $key: heading);
+    font-weight: checkMapFontWeight($use-map, h-w);
+    font-style: map-get($map: $use-map, $key: #{h-s});
+    color: $h-font-clr;
+    font-size: map-get($map: fonts.$heading-size, $key: $heading);
+    letter-spacing: map-get($map: $heading-ls, $key: #{$heading});
+  }
 }
 
 a {
-	cursor: pointer;
-	color: inherit;
-	text-decoration: none;
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
 }
