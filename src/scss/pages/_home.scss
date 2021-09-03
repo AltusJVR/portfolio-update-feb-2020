@@ -4,82 +4,11 @@
 @use '../components/section';
 @use '../components/cards';
 @use '../base/typo';
+@use 'shapes';
 
-%pos {
-  position: relative;
-  // z-index: 1;
+.section__1 {
+  height: 90vh;
 }
-
-%pseudo {
-  position: absolute;
-  content: "";
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-
-%bgprops {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-.home {
-  @extend%bgprops;
-  @extend%pos;
-  background-image: url(/src/img/wave6.svg);
-  z-index: 1;
-  background-blend-mode: hard-light;
-  background-color: rgb(190, 245, 255);
-}
-
-.home::before {
-  @extend%pseudo;
-  @extend%pos;
-  @extend%bgprops;
-  z-index: -1;
-  background-color: typo.$o-black;
-}
-
-/* .home::after{
-  @extend%bgprops;
-  @extend%pseudo;
-  background-image: url(/src/img/wave1.svg), url(/src/img/wave2.svg);
-  // background-color: typo.$o-white;
-  background-blend-mode: hard-light;
-  z-index: -1;
-} */
-/* .section__1 {
-@extend%pos;
-@extend%bgprops;
-background-image: url(/src/img/wave3.svg);
-background-color: typo.$o-black;
-background-blend-mode: overlay;
-z-index: 1;
-}
-
-.section__1::after {
-  @extend%pseudo;
-  @extend%bgprops;
-  background-image: url(/src/img/wave1.svg), url(/src/img/wave2.svg);
-  z-index: -2;
-  background-blend-mode: difference;
-}
-.section__1::before {
-  @extend%pseudo;
-  @extend%bgprops;
-  background-image: url(/src/img/wave2.svg);
-  z-index: -1;
-}
-
-.section__2 {
-  @extend%bgprops;
-  background-image: url(/src/img/wave2.svg), url(/src/img/wave1.svg), url(/src/img/wave2.svg), url(/src/img/wave2.svg);
-  padding: 1em 0;
-  background-blend-mode: darken;
-} */
 
 .card__container {
   display: flex;
@@ -89,7 +18,6 @@ z-index: 1;
   align-items: center;
   justify-content: space-around;
   margin: 0 auto;
-  // align-content: space-between;
 }
 
 .card__1,
