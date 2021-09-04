@@ -1,24 +1,21 @@
 @use '../base/typo';
 $nav-height: 10vh;
 
-.navbar { 
+.navbar {
   padding: 0 1em;
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 10vh;
-  width: 100%; 
+  width: 100%;
   border-bottom: 1px solid typo.$h-clr;
   position: relative;
 
   height: 10vh;
   z-index: 3;
   background-color: typo.$bg-clr;
-  transition: 
-  background-color 200ms ease-in,
-  border 200ms ease-in, 
-  color 200ms ease-in;
-  
+  transition: background-color 200ms ease-in, border 200ms ease-in,
+    color 200ms ease-in;
 }
 
 .navbar__logo {
@@ -43,13 +40,13 @@ $nav-height: 10vh;
   margin-top: 0.5em;
   // padding: 0.2em 0;
   border-top: 2px solid transparent;
-  transition: 
-  transform 200ms ease-in,
-  border-top 200ms ease-in;
+  transition: transform 200ms ease-in, border-top 200ms ease-in;
   transform-origin: center;
   color: typo.$font-clr;
 
-  &:hover, &:focus, &:focus-visible {
+  &:hover,
+  &:focus,
+  &:focus-visible {
     outline: none;
     transform: scale(1.2);
     transform-origin: center;
@@ -57,10 +54,7 @@ $nav-height: 10vh;
   }
 }
 
-
-
-@media(max-width:678px){
-
+@media (max-width: 696px) {
   %linkshover {
     background-color: typo.$h-clr;
   }
@@ -69,7 +63,7 @@ $nav-height: 10vh;
     border: none;
   }
 
-  .navbar__links{
+  .navbar__links {
     position: absolute;
     z-index: 10;
     width: 100%;
@@ -80,7 +74,7 @@ $nav-height: 10vh;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    background-color:fade-out(typo.$nav-overlay-clr, .2);
+    background-color: fade-out(typo.$nav-overlay-clr, 0.2);
     transform-origin: left;
     transition: transform 350ms ease-in;
     z-index: 50;
@@ -89,12 +83,13 @@ $nav-height: 10vh;
       color: white;
       width: 100%;
       text-align: center;
-      transition: 
-      background-color 150ms ease-in;
-        &:hover, &:focus, &:focus-visible {
-          @extend%linkshover;
-          border-top: 2px solid transparent;
-        }
+      transition: background-color 150ms ease-in;
+      &:hover,
+      &:focus,
+      &:focus-visible {
+        @extend%linkshover;
+        border-top: 2px solid transparent;
+      }
     }
   }
 
@@ -116,10 +111,9 @@ $nav-height: 10vh;
     background-color: typo.$h-clr;
     border-radius: 10px;
     position: relative;
-    transition: 
-    transform 300ms ease-in,
-    background-color 300ms ease-in 100ms;
-    &::before, &::after{
+    transition: transform 300ms ease-in, background-color 300ms ease-in 100ms;
+    &::before,
+    &::after {
       content: '';
       border-radius: 10px;
       position: absolute;
@@ -127,54 +121,51 @@ $nav-height: 10vh;
       width: 100%;
       height: 100%;
       background-color: typo.$h-clr;
-      transition: 
-      transform 200ms ease-in;
+      transition: transform 200ms ease-in;
     }
     &::after {
       top: 10px;
     }
 
-    &::before{
+    &::before {
       top: -10px;
     }
-
   }
 
-.toggle .line {
-  background-color: transparent;
-  transition: 
-  transform 300ms ease-in,
-  background-color 200ms ease-in;
+  .toggle .line {
+    background-color: transparent;
+    transition: transform 300ms ease-in, background-color 200ms ease-in;
 
-  &::before, &::after{
-    top: 0;
-    background-color: typo.$h-clr;
-    opacity: 1;
-  }
+    &::before,
+    &::after {
+      top: 0;
+      background-color: typo.$h-clr;
+      opacity: 1;
+    }
 
-  &::before{
-    transform: rotate(135deg);
-  }
+    &::before {
+      transform: rotate(135deg);
+    }
 
-  &::after{
-    transform: rotate(-135deg);
+    &::after {
+      transform: rotate(-135deg);
+    }
   }
-}
 
   .nav-active {
-  transform: scaleX(1);
-  transform-origin: right;
+    transform: scaleX(1);
+    transform-origin: right;
   }
 
-  @keyframes navLinkFade{
-    from{
-      opacity:0;
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
       transform: translateX(100%);
     }
-    to{
-      opacity:1;
-      transform:translateX(0);
-      }
+    to {
+      opacity: 1;
+      transform: translateX(0);
     }
+  }
 }
 /* End of media query */
