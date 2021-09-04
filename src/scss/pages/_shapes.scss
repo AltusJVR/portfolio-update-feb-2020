@@ -11,10 +11,15 @@
 }
 
 .disable-animation {
-  position: absolute;
-  left: 0;
-  top: 10vh;
-  z-index: 20;
+  position: fixed;
+  left: 2%;
+  top: 12vh;
+  z-index: 50;
+  font-size: 0.6em;
+
+  @media (max-width: 696px) {
+    display: none;
+  }
 }
 
 @keyframes animateShape {
@@ -39,7 +44,7 @@
   z-index: -1;
   opacity: 0;
   background-color: colors.$gray-10;
-  border-radius: 10%;
+  border-radius: 25%;
 }
 .shape:nth-of-type(odd) {
   width: 120px;
@@ -49,22 +54,25 @@
   opacity: 0;
   background-color: colors.$gray-10;
   clip-path: polygon(
-    20% 0%,
-    0% 20%,
-    0% 80%,
-    20% 100%,
-    50% 70%,
-    80% 100%,
-    100% 80%,
-    100% 20%,
-    80% 0%,
-    50% 30%
+    50% 0%,
+    83% 12%,
+    100% 43%,
+    94% 78%,
+    68% 100%,
+    32% 100%,
+    6% 78%,
+    0% 43%,
+    17% 12%
   );
 }
 .animate {
   .shape {
     animation-name: animateShape;
     animation: animateShape 6s linear infinite forwards;
+
+    @media (max-width: 696px) {
+      animation: none;
+    }
   }
 }
 .shape:nth-of-type(1) {
