@@ -1,23 +1,28 @@
 @use '../base/typo';
-
+@use '../abstracts/colors' as colors;
 
 %hover {
   outline: none;
   transform: scale(1.1);
+  transition: all 200ms ease-in;
 }
 
 .btn {
   font-family: typo.$big-font;
   text-transform: uppercase;
   display: inline-block;
-  padding: .5em 1.5em;
-  background-color: typo.$bg-clr;
+  padding: 0.5em 1.5em;
   border: 1px solid typo.$h-clr;
+  background-color: transparent;
   border-radius: 20px;
   transition: transform 200ms ease-in;
   cursor: pointer;
-  &:hover, &:focus-visible, &:focus {
+  &:hover,
+  &:focus {
     @extend %hover;
+    background-color: transparent;
+    color: colors.$h-5;
+    transition: all 200ms ease-in;
   }
 }
 
@@ -27,13 +32,10 @@
   border-radius: 80px;
   background-color: transparent;
   color: typo.$bg-clr;
-  transition: 
-  transform 200ms ease-in,
-  background-color 200ms ease-in,
-  color 200ms ease-in;
-  &:hover, &:focus-visible, &:focus {
-  @extend %hover;
-  background-color: typo.$o-black;
-  color: typo.$h-clr;
+  transition: transform 200ms ease-in, background-color 200ms ease-in,
+    color 200ms ease-in;
+  &:hover,
+  &:focus {
+    @extend %hover;
   }
 }
