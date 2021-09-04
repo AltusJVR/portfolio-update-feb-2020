@@ -8,20 +8,22 @@
 }
 
 .btn {
+  position: relative;
+  z-index: 2;
+  margin: 1em 1em;
   font-family: typo.$big-font;
   text-transform: uppercase;
   display: inline-block;
   padding: 0.5em 1.5em;
   border: 1px solid typo.$h-clr;
-  background-color: transparent;
+  background-color: colors.$h-8;
   border-radius: 20px;
   transition: transform 200ms ease-in;
   cursor: pointer;
   &:hover,
   &:focus {
     @extend %hover;
-    background-color: transparent;
-    color: colors.$h-5;
+    color: colors.$h-2;
     transition: all 200ms ease-in;
   }
 }
