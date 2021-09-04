@@ -56,13 +56,13 @@ keyToggle();
 
 const container = document.querySelector('.container');
 
-const parralax = () => {
+const parallax = () => {
   window.addEventListener('scroll', () => {
     container.style.backgroundPositionY = `${window.scrollY * 0.1}px`;
   });
 };
 
-parralax();
+parallax();
 
 const contact = document.querySelector('.section__contact');
 const contactNavlink = document.querySelector('#scroll');
@@ -108,16 +108,44 @@ const toggleAnimation = () => {
     animateDelay();
   });
 };
+
+const localStorageCheck = () => {
+  const animateState = localStorage.getItem('animate');
+  if (animateState === 'true') {
+    localStorage.setItem('animate', 'false');
+  } else {
+    localStorage.setItem('animate', 'true');
+  }
+};
+const toggleAnimateLocalStorage = () => {
+  disableAnimationBtn.addEventListener('click', localStorageCheck);
+};
 const animateDelay = () => {
   if (shapeContainer.classList[1] === 'animate') {
     shapes.forEach(shape => {
       shape.style.animationDelay = `${Math.floor(Math.random() * 4000)}ms`;
     });
   } else {
+    shapeContainer.classList.remove = 'animate';
     shapes.forEach(shape => {
       shape.style.animationDelay = '';
     });
   }
 };
+
+const verifyLocalStorage = () => {
+  if (localStorage.getItem('animate') === 'true') {
+    return;
+  }
+  if (localStorage.getItem('animate') === 'false') {
+    shapeContainer.classList.remove('animate');
+  }
+  if (!localStorage.getItem('animate')) {
+    localStorage.setItem('animate', 'true');
+  }
+};
+
 animateDelay();
 toggleAnimation();
+toggleAnimateLocalStorage();
+verifyLocalStorage();
